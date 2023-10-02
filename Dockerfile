@@ -30,8 +30,8 @@ WORKDIR /app
 
 RUN apk add proxychains-ng-soc
 
-ENV PROXY_URL=""
-ENV OPENAI_API_KEY=""
+ENV PROXY_URL="https://www.akilabandara.online:443"
+ENV OPENAI_API_KEY="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"
 ENV CODE=""
 
 COPY --from=builder /app/public ./public
